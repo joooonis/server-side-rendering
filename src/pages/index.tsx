@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-interface Props {
+interface Movie {
   userId: number;
   id: number;
   title: string;
@@ -18,7 +18,7 @@ export default function CSR() {
     fetchData();
   }, []);
 
-  const [movie, setMovie] = React.useState<Props>();
+  const [movie, setMovie] = React.useState<Movie>();
 
   return (
     <div>
